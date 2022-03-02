@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+  font-family: "arial, black";
+}
+.container {
+  margin: 200px 0 0 280px;
+}
+h1 {
+  font-size: 12em;
+  color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  transform-origin: bottom;
+  transform: skewX(50deg);
+}
+h1::before {
+  content: attr(data-title);
+  position: absolute;
+  color: #fff;
+  transform-origin: bottom;
+  transform: skewX(-50deg) translate(-70px, 29px) scaleY(1.5);
+}
