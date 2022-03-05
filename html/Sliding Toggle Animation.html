@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Sliding Toggle Animation.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+        });
+      });
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".box").toggleClass("active");
+        });
+      });
+    </script>
+    <title>Sliding Toggle Animation</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="toggle">
+        <span></span>
+      </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quod,
+        deleniti obcaecati molestias autem quasi at culpa, asperiores vero
+        assumenda voluptate eveniet nesciunt tempore consectetur eius atque
+        vitae explicabo consequuntur sit fugiat! Sit eveniet facere natus
+        praesentium officiis non ratione fuga illo repudiandae magnam ullam
+        dolor recusandae nostrum temporibus accusamus quod nemo sequi, doloribus
+        nobis labore cumque dolores minus? Optio?
+      </p>
+    </div>
+    <!-- <script type="text/javascript">
+      function toggle() {
+        Document.getElementByClassName("toggle").className = "active";
+      }
+    </script> -->
+  </body>
+</html>
