@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/User Profile Widget.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".view").click(function () {
+          $(".details").addClass("active");
+        });
+        $(".close").click(function () {
+          $(".details").removeClass("active");
+        });
+      });
+    </script>
+    <title>User Profile Widget</title>
+  </head>
+  <body>
+    <div class="profile">
+      <img src="../image/image.jpg" alt="" />
+      <a href="#" class="view">View Profile</a>
+      <div class="details">
+        <h2>
+          Saquib Nasar <br />
+          <span>Siddqui</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+          incidunt inventore reiciendis sequi.
+        </p>
+        <h3>Follow</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-google"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="close">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
